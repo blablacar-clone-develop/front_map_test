@@ -35,20 +35,20 @@ const Home: React.FC = () => {
                     <Col className="text-center">
                         <h1 className="display-4">Протестируем возможности API Google maps</h1>
                         <p className="lead">
-                            Так выглядит пик своей локации на гугл карте
+                            Просмотр возможностей гугл карт
                         </p>
-                        <Button variant="primary" href="/ads">Проверить</Button>
+                        <Button variant="primary" href="/showpick">Посмотреть</Button>
                     </Col>
                 </Row>
 
-                <Row className="mt-5">
-                    <Col>
-                        <p className="lead text-center">
-                            Так выглядит карта центрирована на Украине
-                        </p>
-                        <div ref={mapRef} style={{height: '600px'}}></div>
-                    </Col>
-                </Row>
+                {/*<Row className="mt-5">*/}
+                {/*    <Col>*/}
+                {/*        <p className="lead text-center">*/}
+                {/*            Так выглядит карта центрирована на Украине.*/}
+                {/*        </p>*/}
+                {/*        <div ref={mapRef} style={{height: '600px'}}></div>*/}
+                {/*    </Col>*/}
+                {/*</Row>*/}
             </Container>
         </main>
     );

@@ -4,7 +4,7 @@ services:
   blablacar.front.googlemaps:
     build: ./reactgooglemaps
     env_file:
-      - .env
+      - reactgooglemaps/.env
     ports:
       - '80:3000'
     volumes:
