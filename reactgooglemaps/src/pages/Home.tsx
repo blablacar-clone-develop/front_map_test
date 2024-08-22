@@ -37,18 +37,20 @@ const Home: React.FC = () => {
                         <p className="lead">
                             Просмотр возможностей гугл карт
                         </p>
-                        <Button variant="primary" href="/showpick">Посмотреть</Button>
+                        <Button variant="primary" href="/showpick">Ввод у поле відображення на карті</Button>
+                        <Button variant="secondary" href="/showpickfrommap">Вибір на мапі показ у міста у полі</Button>
                     </Col>
+
                 </Row>
 
-                {/*<Row className="mt-5">*/}
-                {/*    <Col>*/}
-                {/*        <p className="lead text-center">*/}
-                {/*            Так выглядит карта центрирована на Украине.*/}
-                {/*        </p>*/}
-                {/*        <div ref={mapRef} style={{height: '600px'}}></div>*/}
-                {/*    </Col>*/}
-                {/*</Row>*/}
+                <Row className="mt-5">
+                    <Col>
+                        <p className="lead text-center">
+                            Так выглядит карта центрирована на Украине.
+                        </p>
+                        <div ref={mapRef} style={{height: '600px'}}></div>
+                    </Col>
+                </Row>
             </Container>
         </main>
     );
